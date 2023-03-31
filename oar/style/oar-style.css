@@ -6,9 +6,8 @@ body{
     margin: 0 auto;
 }
 .logo {
-    position: absolute;
     left: 0px;
-    width: 80px;
+    width: 80%;
     background-color: #C7F9CC;
     
 }
@@ -22,6 +21,8 @@ nav{
     margin: 0 auto;
     margin-left: 50px;
     padding: 5px;
+    display: flex;
+    justify-content: space-around;
 }
 a{
     text-align: start;
@@ -122,11 +123,9 @@ a{
     font-family: 'Moon Dance';
     font-size: 25px;
 }
-#logo_link{
-    padding-top: 5px;
-}
+
 nav a{
-    padding: 35px;
+    padding-inline: 50px;
 }
 footer .social img{
     padding-top: 15px;
@@ -143,12 +142,7 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
 }
-nav {
-    display: flex;
-    justify-content: space-around;
-}
 #logo_link {
-    padding-top: 5px;
     justify-self: center;
     align-self: center;
 }
@@ -209,6 +203,20 @@ nav {
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
 }
+.card-imges {
+    border: 10px solid #22577A;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.card-imges:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.images-card{
+    grid-column: 8/10;
+    grid-row: 2/3;
+    width: 100%;
+}
 .card-img:hover {
     opacity: .6;
     transform: scale(1.1);
@@ -219,7 +227,7 @@ nav {
         height: auto;
     }
     nav, footer {
-        flex-direction: column;
+        flex-direction: auto;
     }
     nav a {
         display: block;
